@@ -13,8 +13,16 @@ body{
 .parallax{
 	background-image: url('../Images/sharon-mccutcheon-532782-unsplash.jpg');
     height: 500px; 
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.lightSpeedIn{
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	left: 350px;
+	padding-top: 235px;
+}
+
