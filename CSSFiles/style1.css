@@ -70,4 +70,32 @@ body{
 
 .review{
 	height: 500px;
+	background-color: #F2F2F2;
+}
+
+#review-title{
+	color: #525252;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 2em;
+	text-align: center;
+	padding-top: 5%;
+}
+
+hr{
+	background-color: #262626;
+}
+
+#review-name{
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	margin-top: 2%;
+}
+
+#review-content{
+	margin-top: 7%;
+	padding: 0% 15%;
+	font-family: 'Charmonman', cursive;
+	font-size: 2em;
+	text-align: justify;
+	line-height: 2;
 }
