@@ -20,6 +20,12 @@ body{
     background-size: cover;
 }
 
+@media only screen and (max-device-width: 979px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
 #div1{
 	font-family: 'Playfair Display', serif;
 	padding-left: 200px;
@@ -49,10 +55,17 @@ body{
 
 #my-pic{
 	background-image: url('../Images/mypic.jpg');
-	background-size: 50%;
 	height: 700px;
 	background-attachment: fixed;
-	/*background-repeat: no-repeat;*/
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@media only screen and (max-device-width: 979px) {
+    #my-pic {
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+    }
 }
 
 .review{
