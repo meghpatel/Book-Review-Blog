@@ -11,7 +11,8 @@ body{
 }
 
 .parallax{
-	background-image: url('../Images/sharon-mccutcheon-532782-unsplash.jpg');
+	color: white;
+	background-image: url('../Images/janko-ferlic-174927-unsplash.jpg');
     height: 500px; 
     background-attachment: fixed;
     background-position: center;
@@ -36,7 +37,7 @@ body{
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	letter-spacing: .15em; /* Adjust as needed */
 	animation: 
-	  typing 3.5s steps(40, end) infinite alternate,
+	  typing 3.5s steps(32, end) infinite alternate,
 	  blink-caret .75s step-end infinite;
 }
 
