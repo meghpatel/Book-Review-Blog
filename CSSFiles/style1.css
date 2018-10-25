@@ -91,7 +91,7 @@ hr{
 	-webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
     animation-duration: 1s;
-    animation-delay: 4s;
+    animation-delay: 3s;
 
 }
 
@@ -105,5 +105,5 @@ hr{
 	-webkit-animation-name: fadeInRight;
 	animation-name: fadeInRight;
 	animation-duration: 1s;
-	animation-delay: 4s;
+	animation-delay: 3s;
 }
