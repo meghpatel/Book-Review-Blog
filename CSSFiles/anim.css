@@ -50,9 +50,60 @@
   }
 }
 
-.fadeInLeft {
+/*.fadeInLeft {
+  
+}*/
+
+.fadeInLeftIntro{
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
   animation-duration: 1s;
   animation-delay: 2s;
 }
+
+#fadeInLeftReview{
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  animation-duration: 1s;
+  animation-delay: 4s;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/*.fadeInRight {
+  
+}*/
+
+
+/*#fadeInRightReview{
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  animation-duration: 1s;
+  animation-delay: 4s;  
+}*/
