@@ -1,0 +1,52 @@
+h1{
+	font-family: 'Charmonman', cursive;
+	margin-top: 15px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+body{
+	margin:0px;
+	height: 100%;
+}
+
+.parallax{
+	background-image: url('../Images/sharon-mccutcheon-532782-unsplash.jpg');
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#div1{
+	font-family: 'Playfair Display', serif;
+	padding-left: 200px;
+	padding-top: 200px;
+	margin-bottom: 50px;
+}
+
+.typewrite{
+	/*background-color: white;*/
+	font-family: 'Fjalla One', sans-serif;
+	padding-left: 200px;
+	overflow: hidden;
+	border-right: .15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+	  typing 3.5s steps(40, end) infinite alternate,
+	  blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 840px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
