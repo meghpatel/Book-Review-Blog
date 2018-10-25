@@ -25,11 +25,13 @@ body{
 	padding-left: 200px;
 	padding-top: 200px;
 	margin-bottom: 50px;
+	font-size: 3em;
 }
 
 .typewrite{
 	/*background-color: white;*/
 	font-family: 'Fjalla One', sans-serif;
+	font-size: 2em;
 	padding-left: 200px;
 	overflow: hidden;
 	border-right: .15em solid orange; /* The typwriter cursor */
@@ -51,3 +53,31 @@ body{
   from, to { border-color: transparent }
   50% { border-color: orange; }
 }
+
+.row{
+	margin-top: 50px;
+	height: 972px;
+	margin-bottom: 10px;
+}
+
+#intro-topic{
+	font-family: 'Anton', sans-serif;
+	font-size: 3em;
+	margin-top: 50px;
+	margin-left: 20px;
+}
+
+.intro-main{
+	margin-left: 70px;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 2em;
+}
+
+#my-pic{
+	background-image: url('../Images/mypic.jpg');
+	/*border-radius: 50%;*/
+	background-size: 50%;
+	height: 700px;
+	background-attachment: fixed;
+}
+
