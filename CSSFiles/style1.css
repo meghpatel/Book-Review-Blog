@@ -10,6 +10,39 @@ body{
 	/*height: 100%;*/
 }
 
+nav{
+	margin-bottom: 0px;
+}
+
+.navbar-expand-lg{
+	margin-bottom: 0;
+}
+
+.active{
+	transform: scale(1.5);
+	text-decoration: underline;
+}
+
+#item1,#item2{
+
+}
+
+.still{
+	z-index: 99999;
+	position: fixed;
+  	top: 0;
+  	width: 100%;
+  	/*background-color: black;*/
+}
+
+.abc{
+	width: 5%;
+}
+
+.still + .container-fluid {
+  /*padding-top: 102px;*/
+}
+
 .parallax{
 	color: white;
 	background-image: url('../Images/janko-ferlic-174927-unsplash.jpg');
@@ -32,6 +65,7 @@ body{
 	padding-top: 200px;
 	margin-bottom: 50px;
 	font-size: 3em;
+	margin-top: 0;
 }
 
 #intro-div{
