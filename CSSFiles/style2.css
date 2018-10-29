@@ -1,0 +1,37 @@
+.image{
+	color: white;
+	background-image: url('../Images/2001.jpg');
+    height: 500px; 
+    background-attachment: scroll;
+    /*background-position: ;*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@media only screen and (max-device-width: 979px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+hr{
+    background-color: black;
+    color: black;
+}
+
+#main-review h2{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+#main-review p{
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 2;
+    border: solid black 1px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 20px;
+
+}
