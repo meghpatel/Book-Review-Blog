@@ -131,8 +131,35 @@
 
 	</div>
 
-	<div class="container-fluid">
-		
+	<div class="container-fluid" id="contact" style="width: 100%">
+		<div class="row">
+        <div class="col-xs-6">
+        	<h2 id="contact-title">Subscribe to my Newsletter.</h2>
+			<h3 style="padding-left: 20%">Get weekly book reviews from me.</h3>
+            <form class="form-horizontal">
+	            <div class="form-group">
+	              <label for="nameField" class="col-xs-2">Name</label>
+	              <div class="col-xs-10">
+	                <input type="text" class="form-control" id="nameField" placeholder="Your Name" />
+	              </div>
+	            </div>
+	          
+	            <div class="form-group">
+	              <label for="emailField" class="col-xs-2">Email</label>
+	              <div class="col-xs-10">
+	                <input type="email" class="form-control" id="emailField" placeholder="Your Email" />
+	              </div>
+	            </div>
+
+	            <div class="col-xs-10 col-xs-offset-2">
+	              <button type="submit" class="btn btn-primary">Submit</button> <button type="reset" class="btn btn-default">Reset</button>
+	            </div>
+            </form>
+        </div>
+        <div class="col-xs-6">
+        	<h2>Follow me </h2>
+        </div>
+      </div>
 	</div>
 	
 	<script type="text/javascript">
@@ -152,12 +179,14 @@
 		    header.classList.remove("still");
 		  }
 
-		  if(window.pageYOffset>0&&window.pageYOffset<735)
+		  if(window.pageYOffset>0&&window.pageYOffset<599)
 		  {
 		  	item1.classList.add("active");
 		  	item2.classList.remove("active");
+		  	item3.classList.remove("active");
+		  	item4.classList.remove("active");
 		  }
-		  else if(window.pageYOffset>736&&window.pageYOffset<1287)
+		  else if(window.pageYOffset>600&&window.pageYOffset<1287)
 		  {
 		  	item1.classList.remove("active");
 		  	item3.classList.remove("active");
@@ -178,6 +207,7 @@
 		  	item2.classList.remove("active");
 		  	item4.classList.add("active");
 		  }
+		  // else if(window.pageYOffset>)
 		}
 
 

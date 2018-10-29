@@ -15,7 +15,7 @@ nav{
 }
 
 .navbar-light .navbar-nav .nav-link {
-    padding-left: 20px;
+    padding-left: 40px;
 }
 .navbar-expand-lg{
 	margin-bottom: 0;
@@ -23,7 +23,6 @@ nav{
 
 .active{
 	transform: scale(1.5);
-	text-decoration: underline;
 }
 
 #item1,#item2{
@@ -166,4 +165,17 @@ hr{
 
 .img-responsive:hover{
 	transform: scale(1.1);
+}
+
+#contact{
+	background-color: #F2F2F2;
+}
+
+#contact-title{
+	margin-left: 20%;
+}
+
+.form-horizontal{
+	margin-top: 6%;
+	padding-left: 30%;
 }
