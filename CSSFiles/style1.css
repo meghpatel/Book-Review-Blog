@@ -14,6 +14,9 @@ nav{
 	margin-bottom: 0px;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    padding-left: 20px;
+}
 .navbar-expand-lg{
 	margin-bottom: 0;
 }

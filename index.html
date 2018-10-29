@@ -30,8 +30,11 @@
 	      <li class="nav-item" id="item2">
 	        <a class="nav-link" href="#intro">Intro</a>
 	      </li>
-	      <li class="nav-item">
+	      <li class="nav-item" id="item3">
 	        <a class="nav-link" href="#latest-review">My Latest book review</a>
+	      </li>
+	      <li class="nav-item" id="item4"> 
+	      	<a class="nav-link" href="#img-div">My recent reviews</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -136,8 +139,10 @@
 		window.onscroll = function() {stickNavbar()};
 
 		var header = document.getElementById("nav-bar-still");
-		var item1 = document.getElementById("item1")
-		var item2 = document.getElementById("item2")
+		var item1 = document.getElementById("item1");
+		var item2 = document.getElementById("item2");
+		var item3 = document.getElementById("item3");
+		var item4 = document.getElementById("item4");
 		var sticky = header.offsetTop;
 
 		function stickNavbar() {
@@ -147,14 +152,31 @@
 		    header.classList.remove("still");
 		  }
 
-		  if(window.pageYOffset>736&&window.pageYOffset<1287)
+		  if(window.pageYOffset>0&&window.pageYOffset<735)
+		  {
+		  	item1.classList.add("active");
+		  	item2.classList.remove("active");
+		  }
+		  else if(window.pageYOffset>736&&window.pageYOffset<1287)
 		  {
 		  	item1.classList.remove("active");
+		  	item3.classList.remove("active");
+		  	item4.classList.remove("active");
 		  	item2.classList.add("active");
 		  }
-		  else if(window.pageYOffset>1288)
+		  else if(window.pageYOffset>1288&&window.pageYOffset<1718)
 		  {
-		  	
+		  	item2.classList.remove("active");
+		  	item3.classList.add("active");
+		  	item4.classList.remove("active");
+		  	item1.classList.remove("active");
+		  }
+		  else if(window.pageYOffset>1719&&window.pageYOffset<2452)
+		  {
+		  	item3.classList.remove("active");
+		  	item1.classList.remove("active");
+		  	item2.classList.remove("active");
+		  	item4.classList.add("active");
 		  }
 		}
 
