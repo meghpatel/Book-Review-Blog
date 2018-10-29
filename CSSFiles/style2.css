@@ -8,12 +8,6 @@
     background-size: 100%;
 }
 
-@media only screen and (max-device-width: 979px) {
-    .parallax {
-        background-attachment: scroll;
-    }
-}
-
 hr{
     background-color: black;
     color: black;
