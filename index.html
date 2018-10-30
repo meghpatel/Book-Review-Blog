@@ -136,23 +136,24 @@
         <div class="col-xs-6">
         	<h2 id="contact-title">Subscribe to my Newsletter.</h2>
 			<h3 style="padding-left: 20%" id="contact-subtitle">Get weekly book reviews from me.</h3>
-            <form class="form-horizontal">
+            <form class="form-horizontal" method="post" name="form1" onsubmit="return validateForm1();">
 	            <div class="form-group">
 	              <label for="nameField" class="col-xs-2">Name</label>
 	              <div class="col-xs-10">
-	                <input type="text" class="form-control" id="nameField" placeholder="Your Name" />
+	                <input required type="text" name="name1" class="form-control" id="nameField" placeholder="Your Name" />
 	              </div>
 	            </div>
 	          
 	            <div class="form-group">
 	              <label for="emailField" class="col-xs-2">Email</label>
 	              <div class="col-xs-10">
-	                <input type="email" class="form-control" id="emailField" placeholder="Your Email" />
+	                <input required type="email" class="form-control" id="emailField" name="email1" placeholder="Your Email" />
 	              </div>
 	            </div>
 
 	            <div class="col-xs-10 col-xs-offset-2">
-	              <button type="submit" class="btn btn-primary">Submit</button> <button type="reset" class="btn btn-default">Reset</button>
+	            	<input type="submit" name="submit" value="submit" class="btn btn-primary">
+	               <input type="reset" class="btn btn-default" value="Reset"> 
 	            </div>
             </form>
         </div>
@@ -170,7 +171,7 @@
 	</div>
 
 	<footer>
-		<p id="footer-text">Copyrights: Megh Patel</p>
+		<p id="footer-text" style="text-align: right;">Copyrights: Megh Patel</p>
 	</footer>
 	
 	<script type="text/javascript">
@@ -185,6 +186,8 @@
 		var title = document.getElementById("contact-title");
 		var subt = document.getElementById("contact-subtitle");
 		var sticky = header.offsetTop;
+		var x = document.form1.name1.value;
+		var y = document.form1.email1.value;
 
 		function stickNavbar() {
 		  if (window.pageYOffset > sticky) {
@@ -235,10 +238,32 @@
 		  		// title.classList.add("Hello");
 		  		// item4.classList.remove("active");
 		  }
+
 		  
 		}
 
+		function validateForm1()
+		  {
+		  	if(x==null)
+			  {
+			  	alert('Name must be filled');
+			  	return false;
+			  }
+			  else
+			  {
+			  	return true;
+			  }
 
+			 if(y==null)
+			  {
+			  	alert('Email must be filled');
+			  	return false;
+			  }
+			  else
+			  {
+			  	return true;
+			  }
+		  }
 	</script>
 
 </body>
