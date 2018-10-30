@@ -135,7 +135,7 @@
 		<div class="row">
         <div class="col-xs-6">
         	<h2 id="contact-title">Subscribe to my Newsletter.</h2>
-			<h3 style="padding-left: 20%">Get weekly book reviews from me.</h3>
+			<h3 style="padding-left: 20%" id="contact-subtitle">Get weekly book reviews from me.</h3>
             <form class="form-horizontal">
 	            <div class="form-group">
 	              <label for="nameField" class="col-xs-2">Name</label>
@@ -158,13 +158,13 @@
         </div>
         <div class="col-xs-6">
         	<h2>Let's get in touch.</h2>
-        	<a href="https://www.facebook.com/patel.megh09" class="fa fa-facebook"></a>
-			<a href="https://twitter.com/megh_af" class="fa fa-twitter"></a>
-			<a href="#" class="fa fa-linkedin"></a>
-			<a href="https://www.instagram.com/megh_patel/" class="fa fa-instagram"></a>
-			<a href="https://www.snapchat.com/add/me.gh09" class="fa fa-snapchat-ghost"></a>
-			<a href="https://github.com/meghpatel" class="fa fa-github"></a>
-			<a href="https://www.quora.com/profile/Megh-Patel-7" class="fa fa-quora"></a>
+        	<a href="https://www.facebook.com/patel.megh09" class="fa fa-facebook" target="_blank"></a>
+			<a href="https://twitter.com/megh_af" class="fa fa-twitter" target="_blank"></a>
+			<a href="#" class="fa fa-linkedin" target="_blank"></a>
+			<a href="https://www.instagram.com/megh_patel/" class="fa fa-instagram" target="_blank"></a>
+			<a href="https://www.snapchat.com/add/me.gh09" class="fa fa-snapchat-ghost" target="_blank"></a>
+			<a href="https://github.com/meghpatel" class="fa fa-github" target="_blank"></a>
+			<a href="https://www.quora.com/profile/Megh-Patel-7" class="fa fa-quora" target="_blank"></a>
         </div>
       </div>
 	</div>
@@ -181,6 +181,9 @@
 		var item2 = document.getElementById("item2");
 		var item3 = document.getElementById("item3");
 		var item4 = document.getElementById("item4");
+		var contact = document.getElementById("contact");
+		var title = document.getElementById("contact-title");
+		var subt = document.getElementById("contact-subtitle");
 		var sticky = header.offsetTop;
 
 		function stickNavbar() {
@@ -196,6 +199,8 @@
 		  	item2.classList.remove("active");
 		  	item3.classList.remove("active");
 		  	item4.classList.remove("active");
+		  	title.classList.remove("fadeInLeftIntro");
+		  	subt.classList.remove("fadeInRight");
 		  }
 		  else if(window.pageYOffset>600&&window.pageYOffset<1287)
 		  {
@@ -203,6 +208,8 @@
 		  	item3.classList.remove("active");
 		  	item4.classList.remove("active");
 		  	item2.classList.add("active");
+		  	title.classList.remove("fadeInLeftIntro");
+		  	subt.classList.remove("fadeInRight");
 		  }
 		  else if(window.pageYOffset>1288&&window.pageYOffset<1718)
 		  {
@@ -210,6 +217,8 @@
 		  	item3.classList.add("active");
 		  	item4.classList.remove("active");
 		  	item1.classList.remove("active");
+		  	title.classList.remove("fadeInLeftIntro");
+		  	subt.classList.remove("fadeInRight");
 		  }
 		  else if(window.pageYOffset>1719&&window.pageYOffset<2452)
 		  {
@@ -217,8 +226,16 @@
 		  	item1.classList.remove("active");
 		  	item2.classList.remove("active");
 		  	item4.classList.add("active");
+		  	title.classList.add("fadeInLeftIntro");
+		  	subt.classList.add("fadeInRight");
 		  }
-		  // else if(window.pageYOffset>)
+
+		  if(window.pageYOffset == 2132)
+		  {
+		  		// title.classList.add("Hello");
+		  		// item4.classList.remove("active");
+		  }
+		  
 		}
 
 

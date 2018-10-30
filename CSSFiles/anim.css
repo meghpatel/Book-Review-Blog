@@ -57,17 +57,17 @@
 .fadeInLeftIntro{
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
-  animation-duration: 1s;
-  animation-delay: 2s;
+  animation-duration: 2s;
+  /*animation-delay: 1s;*/
 }
 
-#fadeInLeftReview{
+/*#fadeInLeftReview{
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
   animation-duration: 1s;
   animation-delay: 4s;
 }
-
+*/
 @-webkit-keyframes fadeInRight {
   from {
     opacity: 0;
@@ -96,9 +96,12 @@
   }
 }
 
-/*.fadeInRight {
-  
-}*/
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  animation-duration: 1s;
+  /*animation-delay: 1s;*/
+}
 
 
 /*#fadeInRightReview{
